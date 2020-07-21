@@ -17,10 +17,10 @@ function nowServing(katzDeli) {
 }
 
 function currentLine(line) {
+  var test =  [34,35,36]; 
   if (line.length === 0) {
     return `The line is currently empty.`;
   } else {
-
     var array = [];
     for (var i = 0; i < line.length; i++) {
       array.push(` ${i+1}. ${line[i]}`);

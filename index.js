@@ -2,7 +2,8 @@ var katzDeli = [];
 var ticketNumber = 0;
 
 function takeANumber(katzDeli, name){
-  ticketNumber = ticketNumber += 1;
+  ticketNumber += 1;
+  katzDeli.push(ticketNumber);
   katzDeli.push(name)
   return `Welcome, ${name}. You are number ${katzDeli.length} in line.`;
 }
